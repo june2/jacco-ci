@@ -11,7 +11,7 @@ class JavaFooTest {
     @Test
     public void partiallyCoveredHelloMethodTest() {
         String actual = javaFoo.hello("펭");
-        assertEquals(actual, "하");
+        assertEquals(actual, "하1");
     }
 
 }
