@@ -68,12 +68,12 @@ tasks.jacocoTestReport {
     reports {
         // 원하는 리포트를 켜고 끌 수 있다.
         html.isEnabled = true
-        xml.isEnabled = false
+        xml.isEnabled = true
         csv.isEnabled = false
 
 //      각 리포트 타입 마다 리포트 저장 경로를 설정할 수 있다.
       html.destination = file("$buildDir/jacoco")
-//      xml.destination = file("$buildDir/jacoco.xml")
+      xml.destination = file("$buildDir/testCoverage.xml")
     }
 
     finalizedBy("jacocoTestCoverageVerification")
