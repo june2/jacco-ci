@@ -14,3 +14,5 @@ $ ./gradlew clean test jacocoTestReport jacocoTestCoverageVerification
 ```
 
 `jacocoTestCoverageVerification` task에서 실패되는 것을 볼 수 있고, 정상이다. 테스트 커버리지를 올려서 `jacocoTestCoverageVerification` task를 통과시키자.
+
+test
