@@ -11,7 +11,7 @@ class FirstBasePriceTest {
 //        var restult = firstBasePrice.getPrice()
 //        Assertions.assertEquals(restult, 1900.0)
 //    }
-
+//
 //    @Test
 //    internal fun `basePrice 1000 이하일때`() {
 //        val firstBasePrice = FirstBasePrice(10, 2)
