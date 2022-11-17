@@ -13,7 +13,7 @@ plugins {
     jacoco
 }
 
-group = "com.woowahan.thdeng.test"
+group = "com.refactoring.test"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
@@ -47,13 +47,13 @@ tasks.withType<Test> {
     useJUnitPlatform()
 }
 
-//tasks.test {
-//    extensions.configure(JacocoTaskExtension::class) {
-//        destinationFile = file("$buildDir/jacoco/jacoco.exec")
-//    }
-//
-//    finalizedBy("jacocoTestReport")
-//}
+tasks.test {
+    extensions.configure(JacocoTaskExtension::class) {
+        destinationFile = file("$buildDir/jacoco/jacoco.exec")
+    }
+
+    finalizedBy("jacocoTestReport")
+}
 
 jacoco {
     // JaCoCo 버전
@@ -101,16 +101,16 @@ tasks.jacocoTestCoverageVerification {
             limit {
                 counter = "BRANCH"
                 value = "COVEREDRATIO"
-                minimum = "0.10".toBigDecimal()
+                minimum = "0.80".toBigDecimal()
             }
 
             // 라인 커버리지를 최소한 80% 만족시켜야 한다.
-//            limit {
-//                counter = "LINE"
-//                value = "COVEREDRATIO"
-//                minimum = "0.10".toBigDecimal()
-//            }
-//
+            limit {
+                counter = "LINE"
+                value = "COVEREDRATIO"
+                minimum = "0.80".toBigDecimal()
+            }
+
 //            // 빈 줄을 제외한 코드의 라인수를 최대 200라인으로 제한한다.
 //            limit {
 //                counter = "LINE"
