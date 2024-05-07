@@ -13,8 +13,5 @@ $ ./gradlew clean test jacocoTestReport jacocoTestCoverageVerification
 - [우아한 형제들 기술 블로그](http://woowabros.github.io/)
 
 add-a
-<<<<<<< HEAD
 add-hotfix
-=======
 add-b
->>>>>>> 960f83c (feat: 기능 2추가 (#6))
