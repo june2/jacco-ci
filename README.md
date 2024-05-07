@@ -14,3 +14,4 @@ $ ./gradlew clean test jacocoTestReport jacocoTestCoverageVerification
 
 add-a
 add-b
+add-c
