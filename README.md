@@ -15,3 +15,5 @@ $ ./gradlew clean test jacocoTestReport jacocoTestCoverageVerification
 add-a
 add-hotfix
 add-b
+add-c
+add-d
